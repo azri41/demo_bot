@@ -6,7 +6,6 @@ import os
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
-app = Flask(__name__)
 #training
 try:
     os.remove("db.sqlite3")
@@ -29,7 +28,7 @@ file.write('bot : Hi There! I am a medbot. You can begin conversation by typing 
 file.close()
 
 #main
-
+app = Flask(__name__)
 
 english_bot = ChatBot('Bot',
                       storage_adapter='chatterbot.storage.SQLStorageAdapter',
@@ -43,13 +42,13 @@ english_bot = ChatBot('Bot',
 english_bot.set_trainer(ListTrainer)
 
 
-@app.route("/bot", methods=["POST"])
-def response():
+@app.route("/get", methods=["POST"])
+def get_bot_response():
     userText = request.args.get('msg')
     res = str(english_bot.get_response(userText))
 
-    appendfile = os.listdir('saved_conversations')[-1]
-    appendfile = open('saved_conversations/' + str(filenumber), "a")
+    appendfile = os.listdir('bot/saved_conversations')[-1]
+    appendfile = open('bot/saved_conversations/' + str(filenumber), "a")
     appendfile.write('user : ' + userText + '\n')
     appendfile.write('bot : ' + res + '\n')
     appendfile.close()
