@@ -27,3 +27,4 @@ SQLAlchemy==1.2.19
 tqdm==4.54.1
 urllib3==1.26.2
 Werkzeug==1.0.1
+nltk
