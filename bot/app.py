@@ -6,6 +6,20 @@ import os
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
+try:
+    os.remove("db.sqlite3")
+    print("Old database removed. Training new database")
+except:
+    print('No database found. Creating new database.')
+
+english_bot = ChatBot('Bot')
+english_bot.set_trainer(ListTrainer)
+for file in os.listdir('data'):
+    print('Training using ' + file)
+    convData = open('data/' + file).readlines()
+    english_bot.train(convData)
+    print("Training completed for " + file)
+
 filenumber = int(os.listdir('saved_conversations')[-1])
 filenumber = filenumber + 1
 file = open('saved_conversations/' + str(filenumber), "w+")
@@ -26,7 +40,7 @@ english_bot = ChatBot('Bot',
 english_bot.set_trainer(ListTrainer)
 
 
-app = Flask(__name__);
+app = Flask(__name__)
 @app.route("/bot", methods=["POST"])
 def response():
     query = dict(request.form)['query']
