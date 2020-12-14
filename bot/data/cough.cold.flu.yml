@@ -1,0 +1,75 @@
+- - Nose is choked.
+  - Okay, this is a symptom of flu. 
+- - What is the suitable prescribtion?
+  - Please choose the medicine based on: 1. Adult 2. Child
+- - 1. Adult||  1 || Adult || adult
+  - I'm going to prescribe you Hurix's 600 Fluaway Capsule. If  still not feeling well after taking the medicine, please consult a doctor.
+- - 2. Child
+  - I'm going to prescribe you Sambucol Kids Liquid. If still not feeling well after taking the medicine, please consult a doctor.
+- - Okay, thank you. 
+- - 3
+  - Please enter the valid option. 
+
+
+- - Have a cough.
+  - This is a symptom of cold.
+- - What is the suitable prescribtion?
+  - Please choose the medicine based on: 1. Adult 2. Child
+- - 1. Adult
+  - I'm going to prescribe you Hurix's 600 Fluaway Capsule. If still not feeling well after taking the medicine, please consult a doctor.
+- - 2. Child
+  - I'm going to prescribe you Sambucol Kids Liquid. If still not feeling well after taking the medicine, please consult a doctor.
+- - Okay, thank you. 
+- - 3
+  - Please enter the valid option. 
+
+- - Have a cold.
+  - Please choose the medicine based on: 1. Adult 2. Child
+- - 1. Adult
+  - I'm going to prescribe you Hurix's 600 Fluaway Capsule. If  still not feeling well after taking the medicine, please consult a doctor.
+- - 2. Child
+  - I'm going to prescribe you Sambucol Kids Liquid. If you are still not feeling well after taking the medicine, please consult a doctor.
+- - Okay, thank you. 
+- - 3
+  - Please enter the valid option. 
+  
+
+- - Chest is aching.
+  - Okay, this is a symptom of cough. 
+- - What is the suitable prescribtion?
+  - Please choose the medicine based on: 1. Adult 2. Child
+- - 1. Adult
+  - I'm going to prescribe you Ubat Batuk Cap Ibu & Anak. If  still not feeling well after taking the medicine, please consult a doctor.
+- - 2. Child
+  - I'm going to prescribe you Prospan Cough Syrup. If you are still not feeling well after taking the medicine, please consult a doctor.
+- - Okay, thank you. 
+- - 3
+  - Please enter the valid option. 
+  
+  
+- - My nose is itching.
+  - Okay, this is a symptom of flu. 
+- - What is the suitable prescribtion?
+  - Please choose the medicine based on: 1. Adult 2. Child
+- - 1. Adult
+  - I'm going to prescribe you Hurix's 600 Fluaway Capsule. If  still not feeling well after taking the medicine, please consult a doctor.
+- - 2. Child
+  - I'm going to prescribe you Sambucol Kids Liquid. If you are still not feeling well after taking the medicine, please consult a doctor.
+- - Okay, thank you. 
+- - 3
+  - Please enter the valid option. 
+  
+  
+- - Throat is itching.
+  - Okay, this is a symptom of cough. 
+- - What is the suitable prescribtion?
+  - Please choose the medicine based on: 1. Adult 2. Child
+- - 1. Adult
+  - I'm going to prescribe you Ubat Batuk Cap Ibu & Anak. If  still not feeling well after taking the medicine, consult a doctor.
+- - 2. Child
+  - I'm going to prescribe you Prospan Cough Syrup. If you are still not feeling well after taking the medicine, consult a doctor.
+- - Okay, thank you. 
+- - 3
+  - Please enter the valid option.
+   
+ 
