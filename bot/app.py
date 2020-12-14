@@ -44,7 +44,7 @@ app = Flask(__name__)
 @app.route("/bot", methods=["POST"])
 def response():
     userText = request.args.get('msg')
-    res = english_bot.get_response(query)
+    res = english_bot.get_response(userText)
 
     appendfile = os.listdir('saved_conversations')[-1]
     appendfile = open('saved_conversations/' + str(filenumber), "a")
