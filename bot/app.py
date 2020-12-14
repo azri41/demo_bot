@@ -6,6 +6,8 @@ import os
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
+app = Flask(__name__)
+#training
 try:
     os.remove("db.sqlite3")
     print("Old database removed. Training new database")
@@ -26,7 +28,8 @@ file = open('bot/saved_conversations/' + str(filenumber), "w+")
 file.write('bot : Hi There! I am a medbot. You can begin conversation by typing in a message and pressing enter.\n')
 file.close()
 
-app = Flask(__name__)
+#main
+
 
 english_bot = ChatBot('Bot',
                       storage_adapter='chatterbot.storage.SQLStorageAdapter',
@@ -40,11 +43,10 @@ english_bot = ChatBot('Bot',
 english_bot.set_trainer(ListTrainer)
 
 
-app = Flask(__name__)
 @app.route("/bot", methods=["POST"])
 def response():
     userText = request.args.get('msg')
-    res = english_bot.get_response(userText)
+    res = str(english_bot.get_response(userText))
 
     appendfile = os.listdir('saved_conversations')[-1]
     appendfile = open('saved_conversations/' + str(filenumber), "a")
