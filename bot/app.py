@@ -2,7 +2,7 @@ from flask import Flask, jsonify,request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 import os
-import train.py
+import train
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
