@@ -2,24 +2,10 @@ from flask import Flask, jsonify,request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 import os
-
+import train.py
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
 
-#training
-try:
-    os.remove("db.sqlite3")
-    print("Old database removed. Training new database")
-except:
-    print('No database found. Creating new database.')
-
-english_bot = ChatBot('Bot')
-english_bot.set_trainer(ListTrainer)
-for file in os.listdir('bot/data'):
-    print('Training using ' + file)
-    convData = open('bot/data/' + file).readlines()
-    english_bot.train(convData)
-    print("Training completed for " + file)
 
 filenumber = int(os.listdir('bot/saved_conversations')[-1])
 filenumber = filenumber + 1
