@@ -10,8 +10,8 @@ except:
 
 english_bot = ChatBot('Bot')
 english_bot.set_trainer(ListTrainer)
-for file in os.listdir('data'):
+for file in os.listdir('bot/data'):
     print('Training using ' + file)
-    convData = open('data/' + file).readlines()
+    convData = open('bot/data/' + file).readlines()
     english_bot.train(convData)
     print("Training completed for " + file)

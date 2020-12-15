@@ -28,7 +28,7 @@ english_bot = ChatBot('Bot',
 english_bot.set_trainer(ListTrainer)
 
 
-@app.route("/get", methods=["POST"])
+@app.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
     res = str(english_bot.get_response(userText))
